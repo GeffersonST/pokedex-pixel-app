@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/Pokemon-logored.png";
 
 const Header = () => {
   return (
@@ -13,13 +13,14 @@ const Header = () => {
       <div className="HeaderLinks" to="/pokedex">
         Pokedex
       </div>
-      <div
+
+      <a
         className="HeaderLinks"
-        href="https://github.com/GeffersonST target="
-        _blank
+        href="https://github.com/GeffersonST"
+        target_blank
       >
-        Contact
-      </div>
+        Contato
+      </a>
     </div>
   );
 };
