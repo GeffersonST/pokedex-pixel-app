@@ -12,6 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .rock {
   background-color: #d4c294;
 }
@@ -155,4 +156,7 @@ h3 {
   font-size: 25px;
   line-height: 29px;
   margin-right: 100px;
+}
+a:hover {
+  background: #ff7f50;
 }
