@@ -141,6 +141,14 @@ h3 {
   min-width: 50%;
   margin-top: 1rem;
   box-shadow: 0px 4px 16px grey;
+  font-size: large;
+  font-weight: bolder;
+  color: #58abf6;
+}
+button:hover {
+  background: #eb4971;
+
+  text-decoration: none;
 }
 .HeaderPokemon {
   display: flex;
@@ -153,10 +161,18 @@ h3 {
 }
 
 .HeaderLinks {
-  font-size: 25px;
+  font-size: 30px;
   line-height: 29px;
   margin-right: 100px;
+  font-weight: bold;
+  color: #58abf6;
+}
+a {
+  text-decoration: none;
 }
 a:hover {
-  background: #ff7f50;
+  background: #eb4971;
+
+  text-decoration: none;
+  color: var(white);
 }

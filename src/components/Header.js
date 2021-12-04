@@ -20,7 +20,7 @@ const Header = () => {
 
       <a
         className="HeaderLinks"
-        href="https://github.com/GeffersonST"
+        href="https://github.com/GeffersonST/pokedex-pixel-app"
         target_blank
       >
         Documentation

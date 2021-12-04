@@ -43,7 +43,7 @@ const App = () => {
               key={index}
               id={pokemonStats.id}
               image={pokemonStats.sprites.front_default}
-              name={pokemonStats.name}
+              name={pokemonStats.name.toUpperCase()}
               type={pokemonStats.types[0].type.name}
             />
           ))}
