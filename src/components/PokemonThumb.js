@@ -9,8 +9,8 @@ const PokemonThumb = ({ id, image, name, type, _callback }) => {
       </div>
       <img src={image} alt={name} />
       <div className="detail-wrapper">
-        <h3>{name}</h3>
-        <small>Type: {type}</small>
+        <h3 className={style}>{name}</h3>
+        <small className={style}>Type: {type}</small>
       </div>
     </div>
   );

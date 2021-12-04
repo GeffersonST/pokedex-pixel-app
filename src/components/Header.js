@@ -7,13 +7,14 @@ const Header = () => {
       <div className="HeaderLinks">
         <img src={logo} alt="Logo Pokemon" />
       </div>
-      <a className="HeaderLinks" href="/" target_blank>
+      <a className="HeaderLinks" href="/">
         Home
       </a>
       <a
         className="HeaderLinks"
         href="https://github.com/GeffersonST"
-        target_blank
+        target="_blank"
+        rel="noreferrer"
       >
         Contact
       </a>
@@ -21,7 +22,8 @@ const Header = () => {
       <a
         className="HeaderLinks"
         href="https://github.com/GeffersonST/pokedex-pixel-app"
-        target_blank
+        target="_blank"
+        rel="noreferrer"
       >
         Documentation
       </a>
