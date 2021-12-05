@@ -35,17 +35,19 @@ const App = () => {
   return (
     <div className="app-container">
       <Header />
-      <h1>Pokemon PixelArt</h1>
+      <h1>Pokedex PixelArt</h1>
       <div className="pokemon-container">
         <div className="all-container">
           {allPokemons.map((pokemonStats, index) => (
-            <PokemonThumb
-              key={index}
-              id={pokemonStats.id}
-              image={pokemonStats.sprites.front_default}
-              name={pokemonStats.name.toUpperCase()}
-              type={pokemonStats.types[0].type.name}
-            />
+            <a href="/">
+              <PokemonThumb
+                key={index}
+                id={pokemonStats.id}
+                image={pokemonStats.sprites.front_default}
+                name={pokemonStats.name.toUpperCase()}
+                type={pokemonStats.types[0].type.name}
+              />{" "}
+            </a>
           ))}
         </div>
         <button className="load-more" onClick={() => getAllPokemons()}>

@@ -2,6 +2,7 @@ import React from "react";
 
 const PokemonThumb = ({ id, image, name, type, _callback }) => {
   const style = type + " thumb-container";
+
   return (
     <div className={style}>
       <div className="number">
@@ -9,7 +10,7 @@ const PokemonThumb = ({ id, image, name, type, _callback }) => {
       </div>
       <img src={image} alt={name} />
       <div className="detail-wrapper">
-        <h3 className={style}>{name}</h3>
+        <h3>{name}</h3>
         <small className={style}>Type: {type}</small>
       </div>
     </div>

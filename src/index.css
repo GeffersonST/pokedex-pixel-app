@@ -12,7 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+a {
+  text-decoration: none;
+}
 .rock {
   background-color: #d4c294;
 }
@@ -104,6 +106,7 @@ code {
 }
 h3 {
   margin-bottom: 0.2rem;
+  color: #fdfdfd;
 }
 .thumb-container .number {
   border-radius: 1rem;
@@ -118,6 +121,7 @@ h3 {
 .thumb-container small {
   text-transform: capitalize;
 }
+
 .detail-wrapper {
   display: flex;
   flex-direction: column;
@@ -132,6 +136,7 @@ h3 {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.185);
 }
+
 .load-more {
   background: linear-gradient(180deg, #f5db13 0%, #f2b807 100%) repeat-x;
   border-radius: 2px;
