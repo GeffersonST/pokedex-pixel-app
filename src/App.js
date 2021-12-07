@@ -20,6 +20,7 @@ const App = () => {
         const res = await fetch(
           `https://pokeapi.co/api/v2/pokemon/${pokemon.name}`
         );
+
         const data = await res.json();
         setAllPokemons((currentList) => [...currentList, data]);
         await allPokemons.sort((a, b) => a.id - b.id);
@@ -30,7 +31,7 @@ const App = () => {
 
   useEffect(() => {
     getAllPokemons();
-  }, []);
+  }, [""]);
 
   return (
     <div className="app-container">
@@ -38,17 +39,20 @@ const App = () => {
       <h1>Pokedex PixelArt</h1>
       <div className="pokemon-container">
         <div className="all-container">
-          {allPokemons.map((pokemonStats, index) => (
-            <a href="/">
-              <PokemonThumb
-                key={index}
-                id={pokemonStats.id}
-                image={pokemonStats.sprites.front_default}
-                name={pokemonStats.name.toUpperCase()}
-                type={pokemonStats.types[0].type.name}
-              />
-            </a>
-          ))}
+          {allPokemons
+            .sort((a, b) => (a.id > b.id ? 1 : -1))
+            .map((pokemon, index) => (
+              <a href="/">
+                {" "}
+                <PokemonThumb
+                  key={index}
+                  id={pokemon.id}
+                  image={pokemon.sprites.front_default}
+                  name={pokemon.name.toUpperCase()}
+                  type={pokemon.types[0].type.name}
+                />
+              </a>
+            ))}
         </div>
         <button className="load-more" onClick={() => getAllPokemons()}>
           Load more
