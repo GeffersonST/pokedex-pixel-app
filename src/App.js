@@ -39,7 +39,7 @@ const App = () => {
       <div className="pokemon-container">
         <div className="all-container">
           {allPokemons.map((pokemonStats, index) => (
-            <a href="/">
+            <a href="/View">
               <PokemonThumb
                 key={index}
                 id={pokemonStats.id}
