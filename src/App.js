@@ -39,14 +39,14 @@ const App = () => {
       <div className="pokemon-container">
         <div className="all-container">
           {allPokemons.map((pokemonStats, index) => (
-            <a href="/View">
+            <a href="/">
               <PokemonThumb
                 key={index}
                 id={pokemonStats.id}
                 image={pokemonStats.sprites.front_default}
                 name={pokemonStats.name.toUpperCase()}
                 type={pokemonStats.types[0].type.name}
-              />{" "}
+              />
             </a>
           ))}
         </div>
