@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  Web App criado para venda de Produtos. Para criar o mesmo foi usado ReactJs e conhecimentos de Styled Components. 
+  Web App criado para melhorar a abilidades de requerimento de API em ReactJs. Nesse sentido o app tem como intuito fazer surgir todos os Pokemons em estilo Pixelado para o usuário. 
 </h4>
 <p align="center">
   <img src="https://i.ibb.co/TTSqRTR/pixel-poke.png" alt="pixel pokemon"  border="0">
