@@ -37,7 +37,13 @@ const App = () => {
   return (
     <div className="app-container">
       <Header />
+      <h1></h1>
+      <br />
+      <br />
+      <br />
+      <br />
       <h1>Pokedex PixelArt</h1>
+
       <div className="pokemon-container">
         <div className="all-container">
           {allPokemons
