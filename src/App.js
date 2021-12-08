@@ -43,6 +43,7 @@ const App = () => {
           {allPokemons
             .sort((a, b) => (a.id > b.id ? 1 : -1))
             .map((pokemon, index) => (
+              // eslint-disable-next-line jsx-a11y/anchor-is-valid
               <a>
                 {" "}
                 <PokemonThumb
