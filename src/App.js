@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 import React, { useEffect, useState } from "react";
 import PokemonThumb from "./components/PokemonThumb";
 import Header from "./components/Header";
