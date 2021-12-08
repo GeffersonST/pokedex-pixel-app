@@ -43,7 +43,7 @@ const App = () => {
           {allPokemons
             .sort((a, b) => (a.id > b.id ? 1 : -1))
             .map((pokemon, index) => (
-              <a href="/">
+              <a>
                 {" "}
                 <PokemonThumb
                   key={index}
