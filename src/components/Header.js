@@ -2,12 +2,12 @@ import React from "react";
 import logo from "../assets/Pokemon-logored.png";
 
 const Header = () => {
-  return (
+ return (
     <div className="HeaderPokemon">
       <div className="HeaderLinks">
         <img src={logo} alt="Logo Pokemon" />
       </div>
-      <a className="HeaderLinks" href="/">
+      <a className="HeaderLinks" href="#">
         Home
       </a>
       <a
@@ -28,7 +28,7 @@ const Header = () => {
         Documentation
       </a>
     </div>
-  );
+ );
 };
 
 export default Header;
